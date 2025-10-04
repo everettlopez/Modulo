@@ -1,0 +1,35 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modulo.LessonPage"
+             Title="Lesson">
+
+    <VerticalStackLayout Padding="20" Spacing="25">
+
+        <!-- Progress Bar -->
+        <ProgressBar x:Name="LessonProgress" Progress="0.3" HeightRequest="10" />
+
+        <!-- Lives Display -->
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+            <Image Source="heart.png" WidthRequest="24" HeightRequest="24" />
+            <Image Source="heart.png" WidthRequest="24" HeightRequest="24" />
+            <Image Source="heart.png" WidthRequest="24" HeightRequest="24" />
+        </HorizontalStackLayout>
+
+        <!-- Lesson Prompt -->
+        <Frame BackgroundColor="#f0f0f0" Padding="15" CornerRadius="10">
+            <Label Text="Translate: 'Hello World'" FontSize="20" FontAttributes="Bold" />
+        </Frame>
+
+        <!-- Answer Options -->
+        <VerticalStackLayout Spacing="10">
+            <Button Text="Hola Mundo" />
+            <Button Text="Bonjour Monde" />
+            <Button Text="Hallo Welt" />
+            <Button Text="Ciao Mondo" />
+        </VerticalStackLayout>
+
+        <!-- Continue Button -->
+        <Button Text="Continue" BackgroundColor="#512BD4" TextColor="White" CornerRadius="10" />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -513,3 +513,4 @@ C:\Users\evere\OneDrive\Desktop\Modulo\Modulo\obj\Debug\net9.0-windows10.0.19041
 C:\Users\evere\OneDrive\Desktop\Modulo\Modulo\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\evere\OneDrive\Desktop\Modulo\Modulo\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\evere\OneDrive\Desktop\Modulo\Modulo\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\evere\OneDrive\Desktop\Modulo\Modulo\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Modulo.sourcelink.json

@@ -1,0 +1,2 @@
+## Modulo - Gamified Learning Platform
+Modulo is a personal project aimed to improve upon the current standardized educational platform Canvas used by millions of students, and combine the gamified learning schematics from Duolingo to make a personalized platform easy for students and educators alike. 

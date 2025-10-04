@@ -1,0 +1,77 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modulo.CoursePage"
+             Title="Course Page">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="30">
+
+            <!-- 🔹 Resource Cards -->
+            <VerticalStackLayout Spacing="20">
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout>
+                        <Label Text="Announcements" FontSize="24" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="Latest updates and course news." FontSize="16" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout>
+                        <Label Text="Grades" FontSize="24" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="View your performance and feedback." FontSize="16" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout>
+                        <Label Text="Contact" FontSize="24" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="Reach out to your instructor or TA." FontSize="16" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+
+            <!-- 🔸 Module Carousel (2 at a time) -->
+            <Label Text="Modules" FontSize="20" FontAttributes="Bold" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="15">
+                    <Frame WidthRequest="180" HeightRequest="150" BackgroundColor="#e0e0e0" CornerRadius="10" Padding="15">
+                        <VerticalStackLayout>
+                            <Label Text="Module 1" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Intro to Algorithms" FontSize="14" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame WidthRequest="180" HeightRequest="150" BackgroundColor="#e0e0e0" CornerRadius="10" Padding="15">
+                        <VerticalStackLayout>
+                            <Label Text="Module 2" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Sorting Techniques" FontSize="14" TextColor="Black"/>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <!-- Add more modules as needed -->
+                </HorizontalStackLayout>
+            </ScrollView>
+
+            <!-- 🧠 Flashcard Sets (4 at a time) -->
+            <Label Text="Flashcard Sets" FontSize="20" FontAttributes="Bold" />
+            <ScrollView Orientation="Horizontal">
+                <HorizontalStackLayout Spacing="10">
+                    <Frame WidthRequest="120" HeightRequest="120" BackgroundColor="#d0f0ff" CornerRadius="10" Padding="10">
+                        <Label Text="Set 1" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+                    </Frame>
+                    <Frame WidthRequest="120" HeightRequest="120" BackgroundColor="#d0f0ff" CornerRadius="10" Padding="10">
+                        <Label Text="Set 2" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+                    </Frame>
+                    <Frame WidthRequest="120" HeightRequest="120" BackgroundColor="#d0f0ff" CornerRadius="10" Padding="10">
+                        <Label Text="Set 3" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+                    </Frame>
+                    <Frame WidthRequest="120" HeightRequest="120" BackgroundColor="#d0f0ff" CornerRadius="10" Padding="10">
+                        <Label Text="Set 4" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+                    </Frame>
+                    <!-- Add more flashcard sets -->
+                </HorizontalStackLayout>
+            </ScrollView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
