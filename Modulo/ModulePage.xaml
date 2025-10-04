@@ -14,9 +14,10 @@
             </VerticalStackLayout>
 
             <!-- 🔸 Lesson Section: Basics -->
-            <Label Text="Basic HTML" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="Basic HTML" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
             <ScrollView Orientation="Horizontal">
                 <HorizontalStackLayout Spacing="15">
+
                     <Frame WidthRequest="150" HeightRequest="150" BackgroundColor="#e0f7fa" CornerRadius="10" Padding="10">
                         <VerticalStackLayout>
                             <Label Text="Lesson 1" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
@@ -25,11 +26,11 @@
                         </VerticalStackLayout>
                     </Frame>
 
-                    <Frame WidthRequest="150" HeightRequest="150" BackgroundColor="#e0f7fa" CornerRadius="10" Padding="10">
+                    <Frame Style="{StaticResource LessonCardFrame}" WidthRequest="150" HeightRequest="150">
                         <VerticalStackLayout>
-                            <Label Text="Lesson 2" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
-                            <Label Text="Bubble Sort" FontSize="14" TextColor="Black"/>
-                            <ProgressBar Progress="0.0" HeightRequest="6" />
+                            <Label Text="Lesson 1" Style="{StaticResource LessonTitle}" />
+                            <Label Text="Intro to Sorting" Style="{StaticResource LessonSubtitle}" />
+                            <ProgressBar Progress="0.5" />
                         </VerticalStackLayout>
                     </Frame>
                     <!-- Add more lessons -->

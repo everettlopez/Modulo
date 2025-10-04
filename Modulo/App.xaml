@@ -9,6 +9,34 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+
+            <!-- 🔴 Red-themed lesson card style -->
+            <Style x:Key="LessonCardFrame" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#FFCDD2" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="Padding" Value="15" />
+                <Setter Property="HasShadow" Value="True" />
+            </Style>
+
+            <!-- 🔴 Lesson title -->
+            <Style x:Key="LessonTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#E53935" />
+            </Style>
+
+            <!-- 🔴 Lesson subtitle -->
+            <Style x:Key="LessonSubtitle" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="#757575" />
+            </Style>
+
+            <!-- 🔴 Progress bar -->
+            <Style TargetType="ProgressBar">
+                <Setter Property="ProgressColor" Value="#E53935" />
+                <Setter Property="HeightRequest" Value="6" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
