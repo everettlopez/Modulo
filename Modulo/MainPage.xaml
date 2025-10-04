@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modulo.MainPage">
+
+    <Grid BackgroundColor="Gray" RowDefinitions="*,Auto">
+        <ScrollView>
+            <VerticalStackLayout Padding="30,0" Spacing="25">
+
+                <!-- Course Card 1 -->
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="CS 3550 - 001 | Web Development" FontSize="32" FontAttributes="Bold" TextColor="Black" />
+                        <Label Text="Professor. Pratik Soni" FontSize="16" TextColor="Gray" />
+                        <Label Text="Location Room#" FontSize="16" TextColor="Gray" />
+                        <ProgressBar Progress="0.75" HeightRequest="10" BackgroundColor="LightGray" ProgressColor="Green" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Course Card 2 -->
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="CS 4150 - 001 | Algorithms" FontSize="32" FontAttributes="Bold" TextColor="Black" />
+                        <Label Text="Professor. Pratik Soni" FontSize="16" TextColor="Gray" />
+                        <Label Text="Location Room#" FontSize="16" TextColor="Gray" />
+                        <ProgressBar Progress="0.62" HeightRequest="10" BackgroundColor="LightGray" ProgressColor="Green" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Course Card 3 -->
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="CS 6630 - 001 | Visual for Data Science" FontSize="32" FontAttributes="Bold" TextColor="Black" />
+                        <Label Text="Professor. Pratik Soni" FontSize="16" TextColor="Gray" />
+                        <Label Text="Location Room#" FontSize="16" TextColor="Gray" />
+                        <ProgressBar Progress="0.62" HeightRequest="10" BackgroundColor="LightGray" ProgressColor="Green" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Course Card 4 -->
+                <Frame BackgroundColor="White" CornerRadius="10" HasShadow="True" Padding="20">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="CS 2500 - 001 | Data Wrangling" FontSize="32" FontAttributes="Bold" TextColor="Black" />
+                        <Label Text="Professor. Pratik Soni" FontSize="16" TextColor="Gray" />
+                        <Label Text="Location Room#" FontSize="16" TextColor="Gray" />
+                        <ProgressBar Progress="0.62" HeightRequest="10" BackgroundColor="LightGray" ProgressColor="Green" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+         <Grid Grid.Row="1" BackgroundColor="#eeeeee" Padding="10" ColumnSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Dashboard" TextColor="Black" HorizontalOptions="Center" Grid.Column="0" />
+            <Label Text="Calendar" TextColor="Black" HorizontalOptions="Center" Grid.Column="1" />
+            <Label Text="Notifications" TextColor="Black" HorizontalOptions="Center" Grid.Column="2" />
+        </Grid>
+    </Grid>
+
+
+
+    
+
+</ContentPage>

@@ -1,0 +1,94 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modulo.CalendarPage"
+             Title="Calendar">
+    <Grid BackgroundColor="Gray" RowDefinitions="*,Auto">
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="25">
+
+                <!-- Simulated Calendar Grid -->
+                <Grid BackgroundColor="#f0f0f0"
+                    Padding="5"
+                    RowSpacing="2"
+                    ColumnSpacing="2">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Weekday Headers -->
+                    <Label Text="Sun" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="Mon" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="Tue" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="Wed" Grid.Row="0" Grid.Column="3" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="Thu" Grid.Row="0" Grid.Column="4" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="Fri" Grid.Row="0" Grid.Column="5" HorizontalOptions="Center" TextColor="Black"/>
+                    <Label Text="Sat" Grid.Row="0" Grid.Column="6" HorizontalOptions="Center" TextColor="Black"/>    
+                    
+                </Grid>
+
+                <Label Text="Upcoming Events" FontAttributes="Bold" FontSize="32" />
+                <Label Text="Quizzes" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                <HorizontalStackLayout Spacing="10">
+                    <Frame BackgroundColor="#f0f0f0" Padding="15" CornerRadius="8">
+                        <VerticalStackLayout>
+                            <Label Text="Mon." FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="5" FontSize="24" TextColor="Black"/>
+                            <Label Text="CS 2420" FontSize="14" TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="#f0f0f0" Padding="15" CornerRadius="8">
+                        <VerticalStackLayout>
+                            <Label Text="Tue." FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="6" FontSize="24" TextColor="Black"/>
+                            <Label Text="CS 3550" FontSize="14" TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+
+                <Label Text="Exams" FontAttributes="Bold" FontSize="24" TextColor="Black"/>
+                <HorizontalStackLayout Spacing="10">
+                    <Frame BackgroundColor="#f0f0f0" Padding="15" CornerRadius="8">
+                        <VerticalStackLayout>
+                            <Label Text="Wed." FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="12" FontSize="24" TextColor="Black"/>
+                            <Label Text="CS 4150" FontSize="14" TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Frame>
+
+                    <Frame BackgroundColor="#f0f0f0" Padding="15" CornerRadius="8">
+                        <VerticalStackLayout>
+                            <Label Text="Fri." FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="18" FontSize="24" TextColor="Black"/>
+                            <Label Text="CS 3550" FontSize="14" TextColor="Black" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid Grid.Row="1" BackgroundColor="#eeeeee" Padding="10" ColumnSpacing="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Dashboard" TextColor="Black" HorizontalOptions="Center" Grid.Column="0" />
+            <Label Text="Calendar" TextColor="Black" HorizontalOptions="Center" Grid.Column="1" />
+            <Label Text="Notifications" TextColor="Black" HorizontalOptions="Center" Grid.Column="2" />
+        </Grid>
+    </Grid>
+</ContentPage>
