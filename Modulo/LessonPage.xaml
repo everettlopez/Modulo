@@ -5,6 +5,7 @@
 
     <VerticalStackLayout Padding="20" Spacing="25">
 
+        <Label Text="Lesson 1: Greetings in Different Languages" FontSize="24" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
         <!-- Progress Bar -->
         <ProgressBar x:Name="LessonProgress" Progress="0.3" HeightRequest="10" />
 
@@ -17,7 +18,7 @@
 
         <!-- Lesson Prompt -->
         <Frame BackgroundColor="#f0f0f0" Padding="15" CornerRadius="10">
-            <Label Text="Translate: 'Hello World'" FontSize="20" FontAttributes="Bold" />
+            <Label Text="Some random question with text here dadads" FontSize="20" FontAttributes="Bold" />
         </Frame>
 
         <!-- Answer Options -->

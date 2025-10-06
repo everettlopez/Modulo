@@ -9,3 +9,11 @@ Modulo is a personalized education platform that aims to improve on the current 
 - Standardized Course Structures (i.e. Module overviews, universal lesson structures)
 - Course Resource Accessibility
 
+### Course Page
+
+![Course Page Concept](Modulo\assets\CoursePage_Draft.png)
+
+### Module Page
+
+![Module Page Sketch](Modulo\assets\ModulePage_Draft.png)
+

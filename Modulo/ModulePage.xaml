@@ -14,7 +14,7 @@
             </VerticalStackLayout>
 
             <!-- 🔸 Lesson Section: Basics -->
-            <Label Text="Basic HTML" FontSize="20" FontAttributes="Bold" TextColor="Gray"/>
+            <Label Text="Basic HTML" FontSize="20" FontAttributes="Bold" TextColor="Gray" HorizontalOptions="Center"/>
             <ScrollView Orientation="Horizontal">
                 <HorizontalStackLayout Spacing="15">
 
@@ -38,7 +38,7 @@
             </ScrollView>
 
             <!-- 🔸 Lesson Section: Intermediate -->
-            <Label Text="Accessibility" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="Accessibility" FontSize="20" FontAttributes="Bold" TextColor="Gray" HorizontalOptions="Center"/>
             <ScrollView Orientation="Horizontal">
                 <HorizontalStackLayout Spacing="15">
                     <Frame WidthRequest="150" HeightRequest="150" BackgroundColor="#fce4ec" CornerRadius="10" Padding="10">
@@ -60,7 +60,7 @@
             </ScrollView>
 
             <!-- 🔸 Lesson Section: Advanced -->
-            <Label Text="Properties" FontSize="20" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="Properties" FontSize="20" FontAttributes="Bold" TextColor="Gray" HorizontalOptions="Center"/>
             <ScrollView Orientation="Horizontal">
                 <HorizontalStackLayout Spacing="15">
                     <Frame WidthRequest="150" HeightRequest="150" BackgroundColor="#ede7f6" CornerRadius="10" Padding="10">
@@ -76,4 +76,5 @@
 
         </VerticalStackLayout>
     </ScrollView>
+        
 </ContentPage>
