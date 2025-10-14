@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modulo.MainPage">
+
+    <Grid RowDefinitions="*, Auto">
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout Padding="5" Spacing="10">
+                <!-- Week Schedule Widget -->
+                <Grid Padding="2" ColumnSpacing="2" HeightRequest="75" VerticalOptions="Start">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="55" />
+                        <ColumnDefinition Width="55" />
+                        <ColumnDefinition Width="55" />
+                        <ColumnDefinition Width="55" />
+                        <ColumnDefinition Width="55" />
+                        <ColumnDefinition Width="55" />
+                        <ColumnDefinition Width="55" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border HorizontalOptions="Fill" 
+                            VerticalOptions="Start" 
+                            Grid.Column="0" 
+                            Stroke="Black" 
+                            StrokeThickness="2" 
+                            Background="White" 
+                            StrokeShape="RoundRectangle 10" 
+                            Padding="5" >
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Mon." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="9" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            Grid.Column="1"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            Background="White"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5">
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+                        
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Tue." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="10" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            Grid.Column="2"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            Background="White"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+                        
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Wed." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="11" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            Grid.Column="3"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            Background="White"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5">
+                        
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+                        
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Thu." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="12" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            Grid.Column="4"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            Background="White"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5">
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+                        
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Fri." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="13" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            Grid.Column="5"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            Background="White"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5">
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+                        
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Sat." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="14" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Border HorizontalOptions="Fill"
+                            VerticalOptions="Start"
+                            Grid.Column="6"
+                            Stroke="Black"
+                            StrokeThickness="2"
+                            Background="White"
+                            StrokeShape="RoundRectangle 10"
+                            Padding="5">
+
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnDayTapped"/>
+                        </Border.GestureRecognizers>
+                        
+                        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
+                            <Label Text="Sun." FontSize="12" HorizontalTextAlignment="Center"/>
+                            <Label Text="15" FontSize="24" HorizontalTextAlignment="Center"/>
+                            <BoxView HeightRequest="6" WidthRequest="6" Color="Red" CornerRadius="10"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </Grid>
+
+                <StackLayout x:Name="detailsSection"
+                             IsVisible="False"
+                             Padding="10"
+                             BackgroundColor="White">
+                    <Label Text="Assignments Due: " FontAttributes="Bold" FontSize="16"/>
+                    <Label Text="• Project Proposal - Due Sep 10" FontSize="14"/>
+                    <Label Text="• Homework 1 - Due Sep 12" FontSize="14"/>
+                    <Label Text="Collapse All" 
+                           HorizontalTextAlignment="Center" 
+                           FontSize="12" 
+                           Margin="0, 20, 0, 0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnCollapseAllTapped" />
+                        </Label.GestureRecognizers>
+
+                    </Label>
+                </StackLayout>
+                <!-- Course Cards -->
+                <Border HorizontalOptions="Fill" 
+                        VerticalOptions="Start"
+                        Stroke="Black"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 10"
+                        Padding="5">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnModuleTapped" />
+                    </Border.GestureRecognizers>
+                    
+                    <VerticalStackLayout>
+                        <Label Text="CS 4150-001" FontSize="17" HorizontalTextAlignment="Center"/>
+                        <Label Text="Web Software Dev" FontSize="30" HorizontalTextAlignment="Center"/>
+                        <Label Text="Fall 2025" FontSize="17" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border HorizontalOptions="Fill"
+                        VerticalOptions="Start"
+                        Stroke="Black"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 10"
+                        Padding="5">
+                    <VerticalStackLayout>
+                        <Label Text="CS 3550-001" FontSize="17" HorizontalTextAlignment="Center"/>
+                        <Label Text="Algorithms" FontSize="30" HorizontalTextAlignment="Center"/>
+                        <Label Text="Fall 2025" FontSize="17" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border HorizontalOptions="Fill"
+                        VerticalOptions="Start"
+                        Stroke="Black"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 10"
+                        Padding="5">
+                    <VerticalStackLayout>
+                        <Label Text="CS 6630-001" FontSize="17" HorizontalTextAlignment="Center"/>
+                        <Label Text="Vis for Data Science" FontSize="30" HorizontalTextAlignment="Center"/>
+                        <Label Text="Fall 2025" FontSize="17" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border HorizontalOptions="Fill"
+                        VerticalOptions="Start"
+                        Stroke="Black"
+                        StrokeThickness="2"
+                        StrokeShape="RoundRectangle 10"
+                        Padding="5">
+                    <VerticalStackLayout>
+                        <Label Text="DS 2500-001" FontSize="17" HorizontalTextAlignment="Center"/>
+                        <Label Text="Data Wrangling" FontSize="30" HorizontalTextAlignment="Center"/>
+                        <Label Text="Fall 2025" FontSize="17" HorizontalTextAlignment="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <BoxView HeightRequest="1" 
+                 BackgroundColor="Black" 
+                 HorizontalOptions="Fill" 
+                 VerticalOptions="End"/>
+        
+        <Grid Grid.Row="1"
+              BackgroundColor="White"
+              HeightRequest="80"
+              Padding="10"
+              ColumnSpacing="20">
+            
+        </Grid>
+    </Grid>
+
+    
+
+</ContentPage>
