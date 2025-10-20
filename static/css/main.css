@@ -591,3 +591,50 @@ body {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
+
+.flashcard-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.flashcard-section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #005f73;
+  margin-bottom: 1.5rem;
+}
+
+.flashcard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.flashcard-card {
+  display: block;
+  background-color: #e0f7fa;
+  padding: 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #00796b;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.flashcard-card:hover {
+  transform: translateY(-4px);
+  background-color: #b2ebf2;
+}
+
+.flashcard-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.flashcard-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grades — Modulo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/grades.css" />
+
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+        <h1>Modulo</h1>
+
+        <div class="user-section">
+            <p>Everett Lopez </p>
+            <p><a href="/static/login.html">Login</a></p>
+        </div>
+    </div>
+
+    <div class="header-top">
+        <nav class="navigation">
+            <a href="/static/index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+
+        <form action="" method="get">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+  <nav class="course-nav">
+    <ul>
+      <li><a href="/static/pages/resources.html">Resources</a></li>
+      <li><a href="/static/pages/modules.html">Modules</a></li>
+      <li><a href="/static/pages/grades.html">Grades</a></li>
+      <li><a href="#">Quizzes</a></li>
+      <li><a href="#">Assignments</a></li>
+    </ul>
+  </nav>
+
+  <main class="course-content">
+
+    <!-- 📊 Grade Summary -->
+    <section class="grade-summary">
+      <h2>📊 Grade Overview</h2>
+      <div class="grade-card">
+        <h3>Current Grade: <span class="grade-score">88%</span></h3>
+        <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+        <p>You're doing great! Keep up the momentum.</p>
+      </div>
+    </section>
+
+    <!-- 📝 Grade Breakdown -->
+    <section class="grade-breakdown">
+      <h2>📝 Breakdown by Category</h2>
+      <div class="grade-grid">
+        <div class="grade-item">
+          <h3>Quizzes</h3>
+          <p>Average: 85%</p>
+          <ul>
+            <li>Quiz 1 – 80%</li>
+            <li>Quiz 2 – 90%</li>
+          </ul>
+        </div>
+        <div class="grade-item">
+          <h3>Assignments</h3>
+          <p>Average: 92%</p>
+          <ul>
+            <li>Assignment 1 – 95%</li>
+            <li>Assignment 2 – 89%</li>
+          </ul>
+        </div>
+        <div class="grade-item">
+          <h3>Exams</h3>
+          <p>Midterm – 85%</p>
+          <p>Final – Pending</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Modulo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

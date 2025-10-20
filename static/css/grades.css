@@ -1,0 +1,81 @@
+.grade-summary {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.grade-summary h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+.grade-card {
+  background-color: #e0f7fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.grade-score {
+  font-size: 2rem;
+  color: #00796b;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #b2ebf2;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00796b;
+  transition: width 0.3s ease;
+}
+
+.grade-breakdown h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+.grade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.grade-item {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.grade-item h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.grade-item p,
+.grade-item ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.grade-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.grade-item ul li {
+  margin-bottom: 0.5rem;
+}
