@@ -190,3 +190,186 @@ body {
   font-size: 0.95rem;
   color: #555;
 }
+
+.weekly-widget {
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.weekly-widget h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.75rem;
+  color: #005f73;
+  margin-bottom: 1.5rem;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+
+.day-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+  background-color: #e0f7fa;
+  border-color: #b2ebf2;
+}
+
+.day-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #00796b;
+}
+
+.week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.week-header p {
+  font-family: 'Open Sans', sans-serif;
+  color: #00796b;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.week-header h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.75rem;
+  color: #005f73;
+}
+
+.day-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+  background-color: #e0f7fa;
+  border-color: #b2ebf2;
+}
+
+.day-card h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #00796b;
+  
+}
+
+.day-card p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.day-details {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.day-details h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+.day-details ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+.day-details li {
+  margin-bottom: 0.5rem;
+}
+
+.course-nav {
+  background-color: #e0f7fa;
+  border-bottom: 2px solid #b2ebf2;
+  padding: 1rem 2rem;
+}
+
+.course-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.course-nav a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #00796b;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.course-nav a:hover {
+  background-color: #b2ebf2;
+}
+
+.course-content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.course-intro h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.75rem;
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+.course-intro p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.course-section h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.course-section p {
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
